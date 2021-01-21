@@ -77,7 +77,12 @@ footer{
 }
 .transactions{
     
-   
+   text-align: center;
+}
+
+.transactions p{
+    padding: 1%;
+    font-weight: lighter;
 }
 
 ul{
@@ -94,6 +99,7 @@ li{
 ul li {
     width: 100%;
 }
+
 
 .btn-primary{
        // margin:1%;
