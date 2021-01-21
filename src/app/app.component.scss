@@ -27,18 +27,18 @@
 }
 
 #nav1{
-    background:blue;
+    background:#24243e;
     grid-area: nav1;
 }
 
 #nav2{
-    background:lightblue;
+    background:#24243e;
     grid-area: nav2;
 }
 
 #nav3{
-    background:#2c3e50;
-    border: 1px solid blue;
+    background: #292e49;
+    //border: 1px solid blue;
     grid-area: nav3;
 }
 
@@ -49,12 +49,12 @@
 }
 
 #contents1{
-    background:lightcyan;
+    background:#0F2027;
     grid-area: contents1;
 }
 
 #contents2{
-    background:lightseagreen;
+    background:#2c3e50;
     grid-area: contents2;
 }
 
