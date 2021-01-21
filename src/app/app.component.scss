@@ -69,15 +69,60 @@
     background: #26384A
     ;
     grid-row-start: 3;
-    grid-column-end:4 ;
+    grid-column-end:4 ;  
+    width: 100%;
+
+  
+}
+
+
+.btn-group-1{
+
+    width: 100%; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+
+
+#total-top{
+
+    grid-area: total-top;
+}
+
+#total-btn1{
+
+    grid-area: total-btn1;
+}
+#total-btn2{
     
-
+    grid-area: total-btn2;
+}
+#total-btn3{
+    
+    grid-area: total-btn3;
+}
+#total-btn4{
+    
+    grid-area: total-btn4;
+}
+#total-btn5{
+    
+    grid-area: total-btn5;
+}
+#total-btn6{
+    
+    grid-area: total-btn6;
+}
+#total-btn7{
+    
+    grid-area: total-btn7;
 }
 
 
-footer{
-    background:lightgreen
-}
+
 .catergories{
     border:solid;
    
@@ -135,8 +180,18 @@ ul li {
 
    }
 
+#total #total-btn1, #total-btn2, #total-btn3{
+    width: 32.5%;
+    margin:1px
+}
+
+#total #total-btn4, #total-btn5, #total-btn6, #total-btn7 {
+    width: 24.5%;
+    margin:1px
+}
+
 #total .btn{
-    background:black;
+    height: 78px;
 }
 
     
