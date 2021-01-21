@@ -38,6 +38,7 @@
 
 #nav3{
     background:#2c3e50;
+    border: 1px solid blue;
     grid-area: nav3;
 }
 
@@ -71,7 +72,7 @@ footer{
    
 }
 .items{
-    border:solid;
+    //border:solid;
     
 }
 .transactions{
@@ -94,15 +95,23 @@ ul li {
     width: 100%;
 }
 
-.btn
-    {
+.btn-primary{
        // margin:1%;
        background:#2c3e50;
         width: 100% !important;
-        height: 90px !important;
+        height: 91px !important;
         text-align: center;
         font-size: 10px;
-    }
+}
+
+.btn-success{
+    background:#2c3e50;
+    width: 20% !important;
+    height: 92px !important;
+    text-align: center;
+    font-size: 10px;
+
+   }
 
     
 
