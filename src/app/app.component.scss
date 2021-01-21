@@ -15,7 +15,7 @@
     background: #292e49;
     
     grid-template-columns: 0.33fr 2fr 1.5fr;
-    grid-template-rows: 0.75fr 0.5fr 6fr;
+    grid-template-rows: 0.75fr 0.6fr 6fr;
     grid-template-areas: 
     
     "nav3 nav3 nav3"
@@ -82,7 +82,12 @@ footer{
 
 .transactions p{
     padding: 1%;
+    padding-right: 3%;
     font-weight: lighter;
+}
+
+.transactions hr{
+    background:#0F2027;
 }
 
 ul{
