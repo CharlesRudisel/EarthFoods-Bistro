@@ -44,6 +44,8 @@
 }
 
 #contents1{
+    max-height: 100%;
+    overflow: scroll;
     background:#0F2027;
     grid-area: contents1;
 }
