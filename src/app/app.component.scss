@@ -3,29 +3,24 @@
    padding: 0;
 }
 
-
-
 .container{
     display: grid;
     margin: auto;
     width: 100%;
     height: 100vh;
-   
     padding: 5px;
-    background: #292e49;
-    
+    background: #292e49; 
     grid-template-columns: 0.33fr 2fr 1.5fr;
     grid-template-rows: 0.75fr 0.5fr 6fr;
-    grid-template-areas: 
-    
+    grid-template-areas:    
     "nav3 nav3 nav3"
     "nav1 nav1 nav2"
-    "sidebar contents1 contents2"
-    ;
-
+    "sidebar contents1 contents2";
     grid-gap: .3rem;
 }
 
+
+// ======================= Main container Sections =======================================
 #nav1{
     background:#24243e;
     grid-area: nav1;
@@ -54,43 +49,124 @@
 }
 
 #contents2{
+    //overflow: scroll;
     background:#2c3e50;
     grid-area: contents2;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
+    display: grid;
+    //grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr .25fr;
 
-#contents3{
-    background:lightsteelblue
-}
-
-
-#total{
-    padding: 2%;
-    background: #26384A
+    grid-template-areas: 
+    
+    "sub-grid1"
+    "sub-grid2"
     ;
-    grid-row-start: 3;
-    grid-column-end:4 ;  
+
+    
+    //display: grid;
+}
+
+
+
+
+
+// ======================= Buttons for the sidebar (catergories) =======================================
+
+.btn-primary{
+    // margin:1%;
+    background:#2c3e50;
+     width: 100% !important;
+     height: 91px !important;
+     text-align: center;
+     font-size: 10px;
+}
+
+// ======================= Buttons for the menu section (items) =======================================
+.btn-success{
+    background:#2c3e50;
+    width: 20% !important;
+    height: 92px !important;
+    text-align: center;
+    font-size: 10px;
+
+   }
+
+
+
+
+
+
+
+
+// ======================= Transaction Section (Top) =======================================
+
+
+
+#sub-grid1{
+    position: absolute;
+    
+    
+    overflow: scroll;
+   text-align: center;
+   grid-area: sub-grid1;
+   grid-row-start: 1;
+   grid-row-end: 3;
+}
+
+.transactions {
+    max-height: 100%;
     width: 100%;
-
-  
+    //border: solid;
+    //border-color: blue;
+    overflow: scroll;
 }
 
 
-.btn-group-1{
+.transactions p{
+    //position: relative;
+    padding: 1%;
+    padding-right: 3%;
+    font-weight: lighter;
+}
 
-    width: 100%; /* Can be in percentage also. */
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;
+.transactions hr{
+    background:#0F2027;
+}
+
+ul{
+    //display: flexbox;
+    //height: 100%;
+   
+}
+
+li{
+    list-style: none;
+    margin: 1%;
+    
 }
 
 
 
-#total-top{
 
-    grid-area: total-top;
+
+
+// ======================= Total Section (Bottom) =======================================
+
+
+
+#sub-grid2{
+    //border: solid;
+    //border-color: black;
+    grid-area: sub-grid2;
+    grid-row-start: 3;
+
 }
+.total{
+    padding: 2%;
+    background: #26384A;
+    width: 100%;
+}
+
 
 #total-btn1{
 
@@ -123,74 +199,17 @@
 
 
 
-.catergories{
-    border:solid;
-   
-}
-.items{
-    //border:solid;
-    
-}
-.transactions{
-    
-   text-align: center;
-}
-
-.transactions p{
-    padding: 1%;
-    padding-right: 3%;
-    font-weight: lighter;
-}
-
-.transactions hr{
-    background:#0F2027;
-}
-
-ul{
-    display: flexbox;
-    height: 100%;
-   
-}
-
-li{
-    list-style: none;
-    margin: 1%;
-    
-}
-ul li {
-    width: 100%;
-}
-
-
-.btn-primary{
-       // margin:1%;
-       background:#2c3e50;
-        width: 100% !important;
-        height: 91px !important;
-        text-align: center;
-        font-size: 10px;
-}
-
-.btn-success{
-    background:#2c3e50;
-    width: 20% !important;
-    height: 92px !important;
-    text-align: center;
-    font-size: 10px;
-
-   }
-
-#total #total-btn1, #total-btn2, #total-btn3{
+.total #total-btn1, #total-btn2, #total-btn3{
     width: 32.5%;
     margin:1px
 }
 
-#total #total-btn4, #total-btn5, #total-btn6, #total-btn7 {
+.total #total-btn4, #total-btn5, #total-btn6, #total-btn7 {
     width: 24.5%;
     margin:1px
 }
 
-#total .btn{
+.total .btn{
     height: 78px;
 }
 
