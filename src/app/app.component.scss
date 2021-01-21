@@ -12,7 +12,7 @@
     height: 100vh;
    
     padding: 5px;
-    background: black;
+    background: #292e49;
     
     grid-template-columns: 0.33fr 2fr 1.5fr;
     grid-template-rows: 0.75fr 0.5fr 6fr;
@@ -37,12 +37,13 @@
 }
 
 #nav3{
-    background:slategray;
+    background:#2c3e50;
     grid-area: nav3;
 }
 
 #sidebar{
-    background:skyblue;
+   
+    background:#2c3e50;
     grid-area: sidebar;
 }
 
@@ -67,15 +68,15 @@ footer{
 }
 .catergories{
     border:solid;
-    border-color: blue;
+   
 }
 .items{
     border:solid;
-    border-color: green;
+    
 }
 .transactions{
     border:solid;
-    border-color: red;
+   
 }
 
 ul{
@@ -96,6 +97,7 @@ ul li {
 .btn
     {
        // margin:1%;
+       background:#2c3e50;
         width: 100% !important;
         height: 90px !important;
         text-align: center;
