@@ -30,6 +30,7 @@ export class AppComponent {
 
    clear(){
      
+    this.checkout = []
     this.transactions = []
     this.balance = 0;
    }
