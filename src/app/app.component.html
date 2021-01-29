@@ -36,28 +36,28 @@
   </div>
   <div class="card" id="contents1">
     <div class="items" style="display: inline-flex; flex-wrap: wrap;">
-      <button class="btn btn-success" value="1" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="2" type="submit" (click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="3" type="submit" (click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="4" type="submit" (click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="5" type="submit" (click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="6" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="7" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="8" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="9" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="10" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="11" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="12" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="13" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="14" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="15" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="16" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="17" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="18" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="19" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="20" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="21" type="submit"(click)="submit($event)" >Button</button>
-      <button class="btn btn-success" value="22" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="1" id="Cheese Burger" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="2" id="Ham Burger" type="submit" (click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="3" id="French Fries" type="submit" (click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="4" id="Tater Tots" type="submit" (click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="5" id="Cheese Pizza" type="submit" (click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="6" id="Peperonni Pizza" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="7" id="Tacos" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="8" id="Spagetti" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="9" id="Mozzarella sticks" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="10" id="Spinach cheese dip with chips" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="11" id="Mac & cheese" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="12" id="Cheddar Biscuits" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="13" id="Salad" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="14" id="Baked potato" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="15" id="Chicken parmesan" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="16" id="Flatbread pizza" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="17" id="Chicken fingers" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="18" id="Tomato soup" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="19" id="Lobster Bisque Soup" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="20" id="Grilled cheese" type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="21" id="BBQ Nachos"type="submit"(click)="submit($event)" >Button</button>
+      <button class="btn btn-success" value="22" id="Nachos" type="submit"(click)="submit($event)" >Button</button>
 
 
 
@@ -66,7 +66,7 @@
   </div>
   <div class="card" id="contents2">
     <div class="transactions" id="sub-grid1" style="color: white;">
-      <p *ngFor="let t of transactions">{{t}}</p>
+      <p *ngFor="let t of checkout">{{t.price}} || {{t.name}}</p>
       
       
  
