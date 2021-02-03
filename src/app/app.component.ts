@@ -20,18 +20,37 @@ export class AppComponent {
     //this.member_ID = event.target.value
     var obj = new Transaction(Number(event.target.value),event.target.id)
     
-    this.transactions.push(event.target.id)
+    //this.transactions.push(event.target.id)
     this.balance += Number(event.target.value)
-    this.checkout.push(obj)
+    console.log(this.duplicate(obj.name))
+
+    if(this.duplicate(obj.name) == false){
+      this.checkout.push(obj)
+    }
+    
+    
+
+    
+    
+
+  }
 
 
+  duplicate(name:String){
 
+    for(let i=0; i < this.checkout.length; i++){
+
+      if(this.checkout[i].name == name){
+        return true
+      }
+    }
+      return false;
   }
 
    clear(){
      
     this.checkout = []
-    this.transactions = []
+    //this.transactions = []
     this.balance = 0;
    }
 
