@@ -17,22 +17,27 @@ export class AppComponent {
 
 
   submit(event: any) {
-    //this.member_ID = event.target.value
+  
     var obj = new Transaction(Number(event.target.value),event.target.id)
     
-    //this.transactions.push(event.target.id)
     this.balance += Number(event.target.value)
-    console.log(this.duplicate(obj.name))
+    obj.occurence +=1;
+    
 
     if(this.duplicate(obj.name) == false){
       this.checkout.push(obj)
     }
-    
-    
-
-    
-    
-
+    else{
+      let replacement = this.grab(obj.name);
+      this.checkout.splice(this.checkout.indexOf(obj),1)
+      replacement.occurence +=1;
+      replacement.price += obj.price;
+      this.checkout.push(replacement)
+      
+    }
+    console.log(obj.price)
+    console.log(obj.occurence)
+  
   }
 
 
@@ -46,6 +51,19 @@ export class AppComponent {
     }
       return false;
   }
+
+  grab(name:String){
+
+    for(let i=0; i < this.checkout.length; i++){
+
+      if(this.checkout[i].name == name){
+        return this.checkout[i]
+      }
+    }
+      return false;
+  }
+
+
 
    clear(){
      

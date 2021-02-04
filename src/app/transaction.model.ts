@@ -2,7 +2,7 @@ export class Transaction {
 
     price: number;
     name: string;
-    occurence: number;
+    occurence: number = 0;
 
 
     constructor(price:number ,name: string) {
