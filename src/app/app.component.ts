@@ -14,7 +14,8 @@ export class AppComponent {
 
   transactions = []
   balance = 0;
-  checkout =[]
+  checkout = []
+  catergory = []
   breakfast = [
 
     new Item(9, "French Toast"),
@@ -35,71 +36,111 @@ export class AppComponent {
     new Item(13.25, "Smoked Salmon Omelette"),
     new Item(10.25, "The All-American Breakfast"),
     new Item(9.5, "Breakfast Bowl"),
-    
-  
+  ]
+
+  soups = [
+
+    new Item(9, "Tomato Basil Soup"),
+    new Item(8, "Potato & Cheese Soup"),
+    new Item(11, "Asian Chili"),
+    new Item(9, "Bacon Corn Chowder"),
+    new Item(5.5, "Creamy Chicken Enchilada Soup"),
+    new Item(5, "Loaded Baked Potato Soup"),
+    new Item(11, "Manhattan Clam Chowder"),
+    new Item(4.5, "Minestrone"),
+    new Item(9, "Zesty Tomato Cheese Soup"),
+    new Item(7, "lobster bisque"),
 
   ]
 
 
   submit(event: any) {
-  
+
     //console.log(event.target.value)
     //console.log(event.target.id)
-    var obj = new Transaction(Number(event.target.value),event.target.id)
-    
+    var obj = new Transaction(Number(event.target.value), event.target.id)
+
     this.balance += Number(event.target.value)
-    obj.occurence +=1;
-    
+    obj.occurence += 1;
+
 
     //If item is new push to the transaction list
-    if(this.duplicate(obj.name) == false){
+    if (this.duplicate(obj.name) == false) {
       this.checkout.push(obj)
     }
-    else{
+    else {
 
       // Grabs the instance of the transaction
-      this.update(obj.name,obj.price);
+      this.update(obj.name, obj.price);
 
-      
-      
+
+
     }
     console.log(this.checkout.length)
 
-  
+
   }
 
+  catergories(event: any) {
+    switch (event.target.value) {
+      case "mains":
+        this.catergory = this.soups;
+        break;
+      case "breakfast":
+        this.catergory = this.breakfast;
+        break;
+      case "soups":
+        this.catergory = this.soups;
+        break;
+      case "mains":
+        this.catergory = this.soups;
+        break;
+      case "mains":
+        this.catergory = this.soups;
+        break;
+      case "mains":
+        this.catergory = this.soups;
+        break;
+      case "mains":
+        this.catergory = this.soups;
+        break;
+      case "mains":
+        this.catergory = this.soups;
+        break;
+    }
 
-  duplicate(name:String){
+  }
 
-    for(let i=0; i < this.checkout.length; i++){
+  duplicate(name: String) {
 
-      if(this.checkout[i].name == name){
+    for (let i = 0; i < this.checkout.length; i++) {
+
+      if (this.checkout[i].name == name) {
         return true
       }
     }
-      return false;
+    return false;
   }
 
-  update(name:String, newPrice:Number){
+  update(name: String, newPrice: Number) {
 
-    for(let i=0; i < this.checkout.length; i++){
+    for (let i = 0; i < this.checkout.length; i++) {
 
-      if(this.checkout[i].name == name){
-        this.checkout[i].occurence +=1;
+      if (this.checkout[i].name == name) {
+        this.checkout[i].occurence += 1;
         this.checkout[i].price += newPrice;
       }
     }
-      return false;
+    return false;
   }
 
 
+    clear(){
 
-   clear(){
-     
-    this.checkout = []
-    //this.transactions = []
-    this.balance = 0;
-   }
+      this.checkout = []
+      //this.transactions = []
+      this.balance = 0;
+    }
 
 
-}
+  }

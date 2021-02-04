@@ -21,22 +21,22 @@
   <nav class="card" id="nav2">Navbar2</nav>
   <nav class="card" id="nav3">
     <h3 style="text-align: center; color: white; font-weight: lighter; margin: 0;">EarthFoods Bistro</h3>
-  </nav>
+  </nav>  
   <div class="card" id="sidebar">
     <ul>
-      <li class="cat-button"><button class="btn btn-primary" type="submit">Mains</button></li>
-      <li class="cat-button"><button class="btn btn-primary" type="submit">Breakfast</button></li>
-      <li class="cat-button"><button class="btn btn-primary" type="submit">Soups</button></li>
-      <li class="cat-button"><button class="btn btn-primary" type="submit">Pizza</button></li>
-      <li class="cat-button"><button class="btn btn-primary" type="submit">Lunch</button></li>
-      <li class="cat-button"><button class="btn btn-primary" type="submit">Drinks</button></li>
-      <li class="cat-button"><button class="btn btn-primary" type="submit">Desert</button></li>
-      <li class="cat-button"><button class="btn btn-primary" type="submit">Beer</button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="mains" type="submit" (click)="catergories($event)">Mains</button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="breakfast" type="submit" (click)="catergories($event)">Breakfast</button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="soups" type="submit" (click)="catergories($event)">Soups</button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="pizza" type="submit" (click)="catergories($event)">Pizza</button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="lunch" type="submit" (click)="catergories($event)">Lunch</button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="drinks" type="submit" (click)="catergories($event)">Drinks</button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="desert" type="submit" (click)="catergories($event)">Desert</button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="beer" type="submit" (click)="catergories($event)">Beer</button></li>
     </ul>
   </div>
   <div class="card" id="contents1">
     <div class="items" style="display: inline-flex; flex-wrap: wrap;">
-      <button *ngFor="let b of breakfast" class="btn btn-success" value={{b.price}} id={{b.name}} type="submit"(click)="submit($event)" >{{b.name}} <br> {{b.price}}</button>
+      <button *ngFor="let b of catergory" class="btn btn-success" value={{b.price}} id={{b.name}} type="submit"(click)="submit($event)" >{{b.name}} <br> {{b.price}}</button>
    
 
 
