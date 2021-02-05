@@ -16,6 +16,7 @@ export class AppComponent {
   cat_name = 'EarthFoods Signature Dishes';
   balance = 0;
   checkout = []
+  button_color = "btn-success"
   
 
   main = [
@@ -198,34 +199,42 @@ export class AppComponent {
       case "mains":
         this.catergory = this.main;
         this.cat_name = 'EarthFoods Signature Dishes'
+        this.button_color = "btn-success"
         break;
       case "breakfast":
         this.catergory = this.breakfast;
         this.cat_name = 'Breakfast Menu'
+        this.button_color = "btn-warning"
         break;
       case "soups":
         this.catergory = this.soups;
         this.cat_name = 'Soups'
+        this.button_color = "btn-info"
         break;
       case "pizza":
         this.catergory = this.pizza;
         this.cat_name = 'Pizza'
+        this.button_color = "btn-danger"
         break;
       case "lunch":
         this.catergory = this.lunch;
         this.cat_name = 'Lunch Menu'
+        this.button_color = "btn-primary"
         break;
       case "drinks":
         this.catergory = this.drinks;
         this.cat_name = 'Soft Drinks'
+        this.button_color = "btn-secondary"
         break;
       case "desert":
         this.catergory = this.dessert;
         this.cat_name = 'Desserts'
+        this.button_color = "btn-danger"
         break;
       case "beer":
         this.catergory = this.beer;
         this.cat_name = 'Beer Wine and Spirits'
+        this.button_color = "btn-light"
         break;
     }
 

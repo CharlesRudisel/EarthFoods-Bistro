@@ -20,7 +20,7 @@
   </nav>  
   <div class="card" id="sidebar">
     <ul>
-      <li class="cat-button"><button class="btn btn-primary" value="mains" type="submit" (click)="catergories($event)">Mains<br><img src="../assets/meal.svg" alt="" width="50px" height="50px"></button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="mains" type="submit" (click)="catergories($event)">Mains<br><img src="../assets/meal.svg" value="mains" type="submit" click="catergories($event)" alt="" width="50px" height="50px"></button></li>
       <li class="cat-button"><button class="btn btn-primary" value="breakfast" type="submit" (click)="catergories($event)">Breakfast<br><img src="../assets/breakfast.svg" alt="" width="50px" height="50px"></button></li>
       <li class="cat-button"><button class="btn btn-primary" value="soups" type="submit" (click)="catergories($event)">Soups<br><img src="../assets/soup.svg" alt="" width="50px" height="50px"></button></li>
       <li class="cat-button"><button class="btn btn-primary" value="pizza" type="submit" (click)="catergories($event)">Pizza<br><img src="../assets/pizza.svg" alt="" width="50px" height="50px"></button></li>
@@ -32,7 +32,7 @@
   </div>
   <div class="card" id="contents1">
     <div class="items" style="display: inline-flex; flex-wrap: wrap;">
-      <button *ngFor="let b of catergory" class="btn btn-success" value={{b.price}} id={{b.name}} type="submit"(click)="submit($event)" >{{b.name}} <br> {{b.price}}</button>
+      <button *ngFor="let b of catergory" class="btn {{button_color}} btn-item" value={{b.price}} id={{b.name}} type="submit"(click)="submit($event)" style="color: white;">{{b.name}} <br> {{b.price}}</button>
    
 
 
