@@ -166,6 +166,7 @@ export class AppComponent {
   ] 
 
   catergory = this.main
+  font_color = "font-1"
 
   submit(event: any) {
 
@@ -200,41 +201,49 @@ export class AppComponent {
         this.catergory = this.main;
         this.cat_name = 'EarthFoods Signature Dishes'
         this.button_color = "btn-success"
+        this.font_color = "font-1"
         break;
       case "breakfast":
         this.catergory = this.breakfast;
         this.cat_name = 'Breakfast Menu'
         this.button_color = "btn-warning"
+        this.font_color = "font-2"
         break;
       case "soups":
         this.catergory = this.soups;
         this.cat_name = 'Soups'
         this.button_color = "btn-info"
+        this.font_color = "font-3"
         break;
       case "pizza":
         this.catergory = this.pizza;
         this.cat_name = 'Pizza'
         this.button_color = "btn-danger"
+        this.font_color = "font-4"
         break;
       case "lunch":
         this.catergory = this.lunch;
         this.cat_name = 'Lunch Menu'
         this.button_color = "btn-primary"
+        this.font_color = "font-5"
         break;
       case "drinks":
         this.catergory = this.drinks;
         this.cat_name = 'Soft Drinks'
         this.button_color = "btn-secondary"
+        this.font_color = "font-6"
         break;
       case "desert":
         this.catergory = this.dessert;
         this.cat_name = 'Desserts'
         this.button_color = "btn-danger"
+        this.font_color = "font-4"
         break;
       case "beer":
         this.catergory = this.beer;
         this.cat_name = 'Beer Wine and Spirits'
         this.button_color = "btn-light"
+        this.font_color = "font-7"
         break;
     }
 
