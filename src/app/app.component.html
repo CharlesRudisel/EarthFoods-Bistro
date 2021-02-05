@@ -42,7 +42,7 @@
   </div>
   <div class="card" id="contents2">
     <div class="transactions" id="sub-grid1" style="color: white;">
-      <p *ngFor="let t of checkout" (click)="open(content)"><span style="float: left;">{{t.name}} - {{t.occurence}}x </span>   <span style="float: right;">$ {{t.price}} </span> </p>
+      <p *ngFor="let t of checkout" (click)="open(content,t.name)"><span style="float: left;">{{t.name}} - {{t.occurence}}x </span>   <span style="float: right;">$ {{t.price}} </span> </p>
       
       
  
@@ -51,9 +51,11 @@
     <br><br><br><br> <br><br><br> <br><br><br>
 
 
+
+  <!------------------------------------------Modal Code--------------------------------------------------------------------------->
     <ng-template #content let-modal>
       <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+          <h4 class="modal-title" id="modal-basic-title">{{breakdown}}</h4>
           <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
               <span aria-hidden="true">&times;</span>
           </button>
@@ -63,15 +65,15 @@
       <div class="modal-body">
           <form>
 
-              <legend class="col-form-label col-sm-2 pt-0">Specific Procedure</legend>
+              <legend class="col-form-label col-sm-2 pt-0">{{breakdown}}</legend>
               <div class="col-sm-10">
-
+                
 
                   <div *ngFor="let x of z" class="form-check">
                       <input type="checkbox" name="checkbox1" (change)="toggleEditable($event)"
                           [value]="x">
                       <label class="form-check-label" for="defaultCheck1" style="margin-left:4px;">
-                          {{x}}
+                          
                       </label>
                   </div>
 
@@ -86,6 +88,9 @@
               (click)="modal.close('Save click')">Save</button>
       </div>
   </ng-template>
+
+
+  <!--------------------------------------------------------------------------------------------------------------------->
 
     <div class="total" id="sub-grid2">
 

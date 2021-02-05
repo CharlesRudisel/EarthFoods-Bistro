@@ -167,6 +167,7 @@ export class AppComponent {
 
   catergory = this.main
   font_color = "font-1"
+  breakdown;
 
   constructor(private modalService: NgbModal,) {
 
@@ -290,12 +291,15 @@ export class AppComponent {
       this.balance = 0;
     }
 
-    open(content) {
+    open(content, item:String) {
       this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then((result) => {
         this.closeResult = `Closed with: ${result}`;
       }, (reason) => {
         this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
       });
+
+      this.breakdown = item;
+
     }
 
     private getDismissReason(reason: any): string {
