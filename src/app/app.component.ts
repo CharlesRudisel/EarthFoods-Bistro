@@ -77,89 +77,90 @@ export class AppComponent {
   ]
   pizza = [
 
-    new Item(9, "French Toast"),
-    new Item(8, "Huevos Rancheros"),
-    new Item(11, "Brisket Breakfast"),
-    new Item(9, "Southwest Tofu Scramble"),
-    new Item(5.5, "Buttermilk Pancakes"),
-    new Item(5, "Buscuits and Gravy"),
-    new Item(11, "Fish and Grits"),
-    new Item(4.5, "Granola Oatmeal"),
-    new Item(9, "Bluebird Burrito"),
-    new Item(7, "Bionic Breakfast"),
-    new Item(9, "Early Bird Special"),
-    new Item(8.25, "Today's Omelette"),
-    new Item(7.5, "Floridan French Toast"),
-    new Item(12.75, "Full English Breakfast"),
-    new Item(12, "Lemon Riccotta French Toast"),
-    new Item(13.25, "Smoked Salmon Omelette"),
-    new Item(10.25, "The All-American Breakfast"),
-    new Item(9.5, "Breakfast Bowl"),
+    new Item(9, "Cheese Pizza"),
+    new Item(8, "Pepperoni Pizza"),
+    new Item(11, "Margarita Pizza"),
+    new Item(9, "Veggie Pizza"),
+    new Item(5.5, "Super Pizza"),
+    new Item(5, "Meatball Pizza"),
+    new Item(11, "Meat Lovers Pizza"),
+    new Item(4.5, "Detroit Style Delux"),
+   
   ]
 
   lunch = [
 
-    new Item(9, "Tomato Basil Soup"),
-    new Item(8, "Potato & Cheese Soup"),
-    new Item(11, "Asian Chili"),
-    new Item(9, "Bacon Corn Chowder"),
-    new Item(5.5, "Creamy Chicken Enchilada Soup"),
-    new Item(5, "Loaded Baked Potato Soup"),
-    new Item(11, "Manhattan Clam Chowder"),
-    new Item(4.5, "Minestrone"),
-    new Item(9, "Zesty Tomato Cheese Soup"),
-    new Item(7, "lobster bisque"),
+    new Item(9, "Whiskey Chicken Sandwich"),
+    new Item(8, "Bacon Ranch Chicken Sandwich"),
+    new Item(11, "Southern Fried Chicken Sandwich"),
+    new Item(9, "Philly Cheesesteak Burger"),
+    new Item(5.5, "Bacon Cheese Burger"),
+    new Item(5, "Chicken Fingers"),
+    new Item(11, "Flatbread Pizza"),
+    new Item(4.5, "BBQ Wing Platter"),
+    new Item(9, "Shrimp Tacos"),
+    new Item(7, "Seafood Salad"),
 
   ]
 
   drinks = [
 
-    new Item(9, "French Toast"),
-    new Item(8, "Huevos Rancheros"),
-    new Item(11, "Brisket Breakfast"),
-    new Item(9, "Southwest Tofu Scramble"),
-    new Item(5.5, "Buttermilk Pancakes"),
-    new Item(5, "Buscuits and Gravy"),
-    new Item(11, "Fish and Grits"),
-    new Item(4.5, "Granola Oatmeal"),
-    new Item(9, "Bluebird Burrito"),
-    new Item(7, "Bionic Breakfast"),
-    new Item(9, "Early Bird Special"),
-    new Item(8.25, "Today's Omelette"),
-    new Item(7.5, "Floridan French Toast"),
-    new Item(12.75, "Full English Breakfast"),
-    new Item(12, "Lemon Riccotta French Toast"),
-    new Item(13.25, "Smoked Salmon Omelette"),
-    new Item(10.25, "The All-American Breakfast"),
-    new Item(9.5, "Breakfast Bowl"),
+    new Item(9, "Water"),
+    new Item(8, "Chocolate Milk"),
+    new Item(8, "Milk"),
+    new Item(11, "Coffee"),
+    new Item(9, "Caramel Latte"),
+    new Item(5.5, "Coke"),
+    new Item(5, "Sprite"),
+    new Item(11, "Dr. Pepper"),
+    new Item(4.5, "Lemonade"),
+    new Item(9, "Pink Lemonade"),
+    new Item(7, "Orange Soda"),
+    new Item(9, "Apple Juice"),
+    new Item(8.25, "Orange Juice"),
+    new Item(7.5, "Cranberry Juice"),
+    new Item(12.75, "Gatorade"),
+    new Item(12, "Mountain Dew"),
   ]
 
-  desert = [
+  dessert = [
 
-    new Item(9, "Tomato Basil Soup"),
-    new Item(8, "Potato & Cheese Soup"),
-    new Item(11, "Asian Chili"),
-    new Item(9, "Bacon Corn Chowder"),
-    new Item(5.5, "Creamy Chicken Enchilada Soup"),
-    new Item(5, "Loaded Baked Potato Soup"),
-    new Item(11, "Manhattan Clam Chowder"),
-    new Item(4.5, "Minestrone"),
-    new Item(9, "Zesty Tomato Cheese Soup"),
-    new Item(7, "lobster bisque"),
-
+    new Item(9, "Cheesecake"),
+    new Item(8, "Apple Pie"),
+    new Item(11, "Tiramisu"),
+    new Item(9, "Banana Pudding"),
+    new Item(5.5, "Ice Cream"),
+    new Item(5, "Carrot Cake"),
+    new Item(11, "Boston Cream Pie"),
+    new Item(4.5, "Rose Cookies"),
+  
   ] 
   beer = [
 
-    new Item(9, "Tomato Basil Soup"),
-    new Item(8, "Potato & Cheese Soup"),
-    new Item(11, "Asian Chili"),
-    new Item(9, "Bacon Corn Chowder"),
-    new Item(5.5, "Creamy Chicken Enchilada Soup"),
-    new Item(5, "Loaded Baked Potato Soup"),
-    new Item(11, "Manhattan Clam Chowder"),
-    new Item(4.5, "Minestrone"),
-    new Item(9, "Zesty Tomato Cheese Soup"),
-    new Item(7, "lobster bisque"),
+    new Item(9, "Budweiser"),
+    new Item(8, "Bud Light"),
+    new Item(11, "Guiness"),
+    new Item(9, "Blue Moon"),
+    new Item(5.5, "Corona"),
+    new Item(5, "Bell's Two Hearted Ale"),
+    new Item(11, "Dogfish Head 60 Minute"),
+    new Item(4.5, "Stone IPA"),
+    new Item(9, "Long Island Ice Tea"),
+    new Item(7, "Cosmopolitan"),
+    new Item(9, "Pina Colada"),
+    new Item(8, "Old Fashioned"),
+    new Item(11, "Moscow Mule"),
+    new Item(9, "Bloody Mary"),
+    new Item(5.5, "Whiskey Sour"),
+    new Item(5, "Margarita"),
+    new Item(11, "Cabernet Sauvignon"),
+    new Item(4.5, "Zinfandel"),
+    new Item(9, "Pinot Noir"),
+    new Item(7, "Chardonnay"),
+    new Item(11, "Cabernet Sauvignon"),
+    new Item(4.5, "Riesling"),
+    new Item(9, "Merlot"),
+    
 
   ] 
 
@@ -219,8 +220,8 @@ export class AppComponent {
         this.cat_name = 'Soft Drinks'
         break;
       case "desert":
-        this.catergory = this.desert;
-        this.cat_name = 'Deserts'
+        this.catergory = this.dessert;
+        this.cat_name = 'Desserts'
         break;
       case "beer":
         this.catergory = this.beer;
