@@ -17,7 +17,7 @@ export class AppComponent {
   balance = 0;
   checkout = []
   button_color = "btn-success"
-  
+  test = 'pizza'
 
   main = [
 
@@ -31,7 +31,7 @@ export class AppComponent {
     new Item(4.5, "Basil Beef Stir Fry"),
     new Item(9, "Drunken Noodles with Tofu"),
     new Item(7, "Korean Beef"),
-    new Item(9, "Honey Jalapeño Grilled Chicken Drumsticks"),
+    new Item(9, "Honey Jalapeno Grilled Chicken Drumsticks"),
     new Item(8.25, "Bangin’ Mac and Cheese"),
     new Item(7.5, "Bulgogi Kimchi Burger"),
     new Item(12.75, "Eggplant Parmesan Sandwich"),
@@ -298,9 +298,11 @@ export class AppComponent {
         this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
       });
 
-      this.breakdown = item;
+     this.breakdown =item
 
     }
+
+   
 
     private getDismissReason(reason: any): string {
 
