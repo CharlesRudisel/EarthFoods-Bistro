@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Item } from './item.model';
 import { Transaction } from './transaction.model';
-
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ import { Transaction } from './transaction.model';
 export class AppComponent {
   title = 'pos-app';
   public trans: Transaction;
-
+  closeResult = '';
   transactions = []
   cat_name = 'EarthFoods Signature Dishes';
   balance = 0;
@@ -168,6 +168,11 @@ export class AppComponent {
   catergory = this.main
   font_color = "font-1"
 
+  constructor(private modalService: NgbModal,) {
+
+    
+  }
+
   submit(event: any) {
 
     //console.log(event.target.value)
@@ -283,6 +288,25 @@ export class AppComponent {
       this.checkout = []
       //this.transactions = []
       this.balance = 0;
+    }
+
+    open(content) {
+      this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then((result) => {
+        this.closeResult = `Closed with: ${result}`;
+      }, (reason) => {
+        this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+      });
+    }
+
+    private getDismissReason(reason: any): string {
+
+      if (reason === ModalDismissReasons.ESC) {
+        return 'by pressing ESC';
+      } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+        return 'by clicking on a backdrop';
+      } else {
+        return `with: ${reason}`;
+      }
     }
 
 
