@@ -195,8 +195,13 @@ export class AppComponent {
 
   }
 
-  catergories(event: any) {
-    switch (event.target.value) {
+  cat2(){
+    console.log("cat hit 2")
+  }
+
+  catergories(event: String) {
+    console.log(event)
+    switch (event) {
       case "mains":
         this.catergory = this.main;
         this.cat_name = 'EarthFoods Signature Dishes'
