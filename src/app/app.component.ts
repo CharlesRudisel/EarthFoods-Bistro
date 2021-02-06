@@ -200,9 +200,7 @@ export class AppComponent {
 
   }
 
-  cat2(){
-    console.log("cat hit 2")
-  }
+ 
 
   catergories(event: String) {
     console.log(event)
@@ -282,6 +280,19 @@ export class AppComponent {
     return false;
   }
 
+  remove(name: String) {
+
+    console.log(name)
+    for (let i = 0; i < this.checkout.length; i++) {
+
+      if (this.checkout[i].name == name) {
+        this.checkout.splice(i,1);
+       
+      }
+    }
+    return false;
+  }
+
 
     clear(){
 
@@ -312,6 +323,11 @@ export class AppComponent {
       } else {
         return `with: ${reason}`;
       }
+    }
+
+
+    removeItem(item:String){
+
     }
 
 
