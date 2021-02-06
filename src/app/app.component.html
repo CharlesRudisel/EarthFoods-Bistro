@@ -5,11 +5,11 @@
 
 
     <div ngbDropdown class="d-inline-block">
-      <a class= "{{font_color}}" style="padding: 2%;"  id="dropdownBasic1">{{cat_name}}</a>
-      
+      <a class="{{font_color}}" style="padding: 2%;" id="dropdownBasic1">{{cat_name}}</a>
+
     </div>
- 
-  
+
+
   </nav>
 
 
@@ -17,23 +17,40 @@
   <nav class="card" id="nav2"></nav>
   <nav class="card" id="nav3">
     <h3 style="text-align: center; color: white; font-weight: lighter; margin: 0;">EarthFoods Bistro</h3>
-  </nav>  
+  </nav>
   <div class="card" id="sidebar">
     <ul>
-      <li class="cat-button"><button class="btn btn-primary" value="mains" type="submit" (click)="catergories('mains')">Mains<br><img src="../assets/meal.svg" alt="" width="50px" height="50px"></button></li>
-      <li class="cat-button"><button class="btn btn-primary" value="breakfast" type="submit" (click)="catergories('breakfast')">Breakfast<br><img src="../assets/breakfast.svg" alt="" width="50px" height="50px"></button></li>
-      <li class="cat-button"><button class="btn btn-primary" value="soups" type="submit" (click)="catergories('soups')">Soups<br><img src="../assets/soup.svg" alt="" width="50px" height="50px"></button></li>
-      <li class="cat-button"><button class="btn btn-primary" value="pizza" type="submit" (click)="catergories('pizza')">Pizza<br><img src="../assets/pizza.svg" alt="" width="50px" height="50px"></button></li>
-      <li class="cat-button"><button class="btn btn-primary" value="lunch" type="submit" (click)="catergories('lunch')">Lunch<br><img src="../assets/dinner.svg" alt="" width="50px" height="50px"></button></li>
-      <li class="cat-button"><button class="btn btn-primary" value="drinks" type="submit" (click)="catergories('drinks')">Drinks<br><img src="../assets/soft-drink.svg" alt="" width="50px" height="50px"></button></li>
-      <li class="cat-button"><button class="btn btn-primary" value="desert" type="submit" (click)="catergories('desert')">Desert<br><img src="../assets/cake.svg" alt="" width="50px" height="50px"></button></li>
-      <li class="cat-button"><button class="btn btn-primary" value="beer" type="submit" (click)="catergories('beer')">Cocktails<br><img src="../assets/cocktail.svg" alt="" width="50px" height="50px"></button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="mains" type="submit"
+          (click)="catergories('mains')">Mains<br><img src="../assets/meal.svg" alt="" width="50px"
+            height="50px"></button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="breakfast" type="submit"
+          (click)="catergories('breakfast')">Breakfast<br><img src="../assets/breakfast.svg" alt="" width="50px"
+            height="50px"></button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="soups" type="submit"
+          (click)="catergories('soups')">Soups<br><img src="../assets/soup.svg" alt="" width="50px"
+            height="50px"></button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="pizza" type="submit"
+          (click)="catergories('pizza')">Pizza<br><img src="../assets/pizza.svg" alt="" width="50px"
+            height="50px"></button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="lunch" type="submit"
+          (click)="catergories('lunch')">Lunch<br><img src="../assets/dinner.svg" alt="" width="50px"
+            height="50px"></button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="drinks" type="submit"
+          (click)="catergories('drinks')">Drinks<br><img src="../assets/soft-drink.svg" alt="" width="50px"
+            height="50px"></button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="desert" type="submit"
+          (click)="catergories('desert')">Desert<br><img src="../assets/cake.svg" alt="" width="50px"
+            height="50px"></button></li>
+      <li class="cat-button"><button class="btn btn-primary" value="beer" type="submit"
+          (click)="catergories('beer')">Cocktails<br><img src="../assets/cocktail.svg" alt="" width="50px"
+            height="50px"></button></li>
     </ul>
   </div>
   <div class="card" id="contents1">
     <div class="items" style="display: inline-flex; flex-wrap: wrap;">
-      <button *ngFor="let b of catergory" class="btn {{button_color}} btn-item" value={{b.price}} id={{b.name}} type="submit"(click)="submit($event)" style="color: white;">{{b.name}} <br> {{b.price}}</button>
-   
+      <button *ngFor="let b of catergory" class="btn {{button_color}} btn-item" value={{b.price}} id={{b.name}}
+        type="submit" (click)="submit($event)" style="color: white;">{{b.name}} <br> {{b.price}}</button>
+
 
 
 
@@ -42,60 +59,63 @@
   </div>
   <div class="card" id="contents2">
     <div class="transactions" id="sub-grid1" style="color: white;">
-      <p *ngFor="let t of checkout" (click)="open(content,t.name)"><span style="float: left;">{{t.name}} - {{t.occurence}}x </span>   <span style="float: right;">$ {{t.price}} </span> </p>
-      
-      
- 
+      <p *ngFor="let t of checkout" (click)="open(content,t.name)"><span style="float: left;">{{t.name}} -
+          {{t.occurence}}x </span> <span style="float: right;">$ {{t.price}} </span> </p>
+
+
+
     </div>
 
     <br><br><br><br> <br><br><br> <br><br><br>
 
 
 
-  <!------------------------------------------Modal Code--------------------------------------------------------------------------->
+    <!------------------------------------------Modal Code--------------------------------------------------------------------------->
     <ng-template #content let-modal>
-      <div class="modal-header">
-          <h4 class="modal-title" id="modal-basic-title">{{breakdown}}</h4>
-          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-              <span aria-hidden="true">&times;</span>
-          </button>
+      <div class="modal-header" style="color: white; background-color: #2c3e50;">
+        <h4 class="modal-title" id="modal-basic-title">{{breakdown}}</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      
+
       <!--Modal Body-->
-      <div class="modal-body">
-          <form>
+      <div class="modal-body" style="color: white; background-color: #2c3e50;">
+        <form>
 
-              <legend class="col-form-label col-sm-2 pt-0">{{breakdown}}</legend>
-              <div class="col-sm-10">
-                <img src="../assets/{{breakdown}}.jpg" alt="" width="400px" height="300px">
+          <legend class="col-form-label col-sm-2 pt-0">{{breakdown}}</legend>
+          <div class="col-sm-10">
+            <img src="../assets/{{breakdown}}.jpg" alt="" width="400px" height="300px" style="padding: 2%;">
 
-                  <div *ngFor="let x of z" class="form-check">
-                      <input type="checkbox" name="checkbox1" (change)="toggleEditable($event)"
-                          [value]="x">
-                      <label class="form-check-label" for="defaultCheck1" style="margin-left:4px;">
-                          
-                      </label>
-                  </div>
+            <div *ngFor="let x of z" class="form-check">
+              <input type="checkbox" name="checkbox1" (change)="toggleEditable($event)" [value]="x">
+              <label class="form-check-label" for="defaultCheck1" style="margin-left:4px;">
 
-                 
-              </div>
-          </form>
+              </label>
+            </div>
+
+
+          </div>
+        </form>
       </div>
       <!--Modal footer-->
 
-      <div class="modal-footer">
-          <button type="button" class="btn btn-outline-dark" (click)="display()"
-              (click)="modal.close('Save click')">Save</button>
+      <div class="modal-footer" style="color: white; background-color: #2c3e50;">
+        <button type="button" class="btn btn-danger" (click)="display()" style="padding: 2%; margin-right:2%;"
+          (click)="modal.close('Save click')">Delete Item</button>
+        <button type="button" class="btn btn-success" (click)="display()" style="padding: 2%; "
+          (click)="modal.close('Save click')">Save Changes</button>
+        
       </div>
-  </ng-template>
+    </ng-template>
 
 
-  <!--------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------->
 
     <div class="total" id="sub-grid2">
 
       <h6 style="margin: 5%; color:white; font-weight: lighter;">Total: ${{balance}}</h6>
-      
+
 
       <button class="btn btn btn-dark" type="submit" id="total-btn1">Card</button>
       <button class="btn btn btn-dark" type="submit" id="total-btn2">Cash</button>
