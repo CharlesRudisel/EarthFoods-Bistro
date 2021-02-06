@@ -158,7 +158,6 @@ export class AppComponent {
     new Item(4.5, "Zinfandel"),
     new Item(9, "Pinot Noir"),
     new Item(7, "Chardonnay"),
-    new Item(11, "Cabernet Sauvignon"),
     new Item(4.5, "Riesling"),
     new Item(9, "Merlot"),
     
