@@ -286,6 +286,7 @@ export class AppComponent {
     for (let i = 0; i < this.checkout.length; i++) {
 
       if (this.checkout[i].name == name) {
+        this.balance -= this.checkout[i].price
         this.checkout.splice(i,1);
        
       }
