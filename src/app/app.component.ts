@@ -21,7 +21,26 @@ export class AppComponent {
   
   z  = ([[1 , true], [2 ,false ] ,[4, true]]); 
 
-
+//=====================================Mains ===================================================================//
+  Quinoa_Enchilada_Bake =[]
+  Parmesan_and_Spinach_Orzo = []
+  Herbed_Cranberry_Chicken = []
+  French_Onion_Chicken = []
+  Mini_Buffalo_Chicken_Crunchwraps = []
+  Cold_Spicy_Peanut_Sesame_Noodles = []
+  Cajun_Chicken_Pasta = []
+  Basil_Beef_Stir_Fry = []
+  Drunken_Noodles_with_Tofu = []
+  Korean_Beef = []
+  Honey_Jalapeno_Grilled_Chicken_Drumsticks = []
+  Bangin_Mac_and_Cheese = []
+  Bulgogi_Kimchi_Burger = []
+  Eggplant_Parmesan_Sandwich = []
+  Creamy_Steak_Fettuccine = []
+  Reverse_Sear_Steak = []
+  Juicy_Steak_and_Tomato_Salad = []
+  Pan_Roasted_Salmon_Salad = []
+ 
 
   main = [
 
@@ -44,6 +63,29 @@ export class AppComponent {
     new Item(10.25, "Juicy Steak-and-Tomato Salad"),
     new Item(9.5, "Pan-Roasted Salmon Salad"),
   ]
+
+  //=====================================Breakfast ===================================================================//
+
+  French_Toast = []
+  Huevos_Rancheros = []
+  Brisket_Breakfast = []
+  Southwest_Tofu_Scramble = []
+  Buttermilk_Pancakes = []
+  Buscuits_and_Gravy = []
+  Fish_and_Grits = []
+  Granola_Oatmeal = []
+  Bluebird_Burrito = []
+  Bionic_Breakfast = []
+  Early_Bird_Special = []
+  Todays_Omelette = []
+  Floridan_French_Toast = []
+  Full_English_Breakfast = []
+  Lemon_Riccotta_French_Toast = []
+  Smoked_Salmon_Omelette = []
+  The_All_American_Breakfast = []
+  Breakfast_Bowl = []
+
+
   breakfast = [
 
     new Item(9, "French Toast"),
@@ -65,6 +107,19 @@ export class AppComponent {
     new Item(10.25, "The All-American Breakfast"),
     new Item(9.5, "Breakfast Bowl"),
   ]
+//=====================================Soups ===================================================================//
+
+
+  Tomato_Basil_Soup = []
+  Potato_and_Cheese_Soup = []
+  Asian_Chili = []
+  Bacon_Corn_Chowder = []
+  Creamy_Chicken_Enchilada_Soup = []
+  Loaded_Baked_Potato_Soup = []
+  Manhattan_Clam_Chowder = []
+  Minestrone = []
+  Zesty_Tomato_Cheese_Soup = []
+  lobster_bisque = []
 
   soups = [
 
@@ -80,6 +135,11 @@ export class AppComponent {
     new Item(7, "lobster bisque"),
 
   ]
+
+  //=====================================Pizza ===================================================================//
+
+
+  
   pizza = [
 
     new Item(9, "Cheese Pizza"),
@@ -92,6 +152,8 @@ export class AppComponent {
     new Item(4.5, "Detroit Style Delux"),
    
   ]
+
+  //=====================================Lunch ===================================================================//
 
   lunch = [
 
@@ -107,6 +169,8 @@ export class AppComponent {
     new Item(7, "Seafood Salad"),
 
   ]
+
+  //=====================================Drinks ===================================================================//
 
   drinks = [
 
@@ -128,6 +192,8 @@ export class AppComponent {
     new Item(12, "Mountain Dew"),
   ]
 
+  //=====================================Dessert ===================================================================//
+
   dessert = [
 
     new Item(9, "Cheesecake"),
@@ -140,6 +206,9 @@ export class AppComponent {
     new Item(4.5, "Rose Cookies"),
   
   ] 
+
+
+  //=====================================Beer ===================================================================//
   beer = [
 
     new Item(9, "Budweiser"),
