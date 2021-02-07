@@ -18,6 +18,10 @@ export class AppComponent {
   checkout = []
   button_color = "btn-success"
   test = 'pizza'
+  
+  z  = ([[1 , true], [2 ,false ] ,[4, true]]); 
+
+
 
   main = [
 

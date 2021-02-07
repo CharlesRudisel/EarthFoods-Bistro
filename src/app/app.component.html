@@ -73,7 +73,7 @@
     <!------------------------------------------Modal Code--------------------------------------------------------------------------->
     <ng-template #content let-modal>
       <div class="modal-header" style="color: white; background-color: #2c3e50;">
-        <h4 class="modal-title" id="modal-basic-title">{{breakdown}}</h4>
+        <h4 class="modal-title" id="modal-basic-title" style="margin: 2%;">{{breakdown}}</h4>
         <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -83,16 +83,31 @@
       <div class="modal-body" style="color: white; background-color: #2c3e50;">
         <form>
 
-          <legend class="col-form-label col-sm-2 pt-0">{{breakdown}}</legend>
+
+
           <div class="col-sm-10">
-            <img src="../assets/{{breakdown}}.jpg" alt="" width="400px" height="300px" style="padding: 2%;">
 
             <div *ngFor="let x of z" class="form-check">
-              <input type="checkbox" name="checkbox1" (change)="toggleEditable($event)" [value]="x">
-              <label class="form-check-label" for="defaultCheck1" style="margin-left:4px;">
 
-              </label>
+
+              <div *ngIf="x[1]==true; else elseBlock">
+                <input type="checkbox" name="checkbox1" (change)="toggleEditable($event)" [value]="x"
+                  style="margin: 2%;" checked>
+                {{x[0]}}
+              </div>
+
+              <ng-template #elseBlock>
+                <input type="checkbox" name="checkbox1" (change)="toggleEditable($event)" [value]="x"
+                  style="margin: 2%;">
+                {{x[0]}}
+              </ng-template>
+
+
             </div>
+
+            <img src="../assets/{{breakdown}}.jpg" alt="" width="400px" height="300px" style="padding: 2%;">
+
+
 
 
           </div>
@@ -103,9 +118,9 @@
       <div class="modal-footer" style="color: white; background-color: #2c3e50;">
         <button type="button" class="btn btn-danger" (click)="remove(breakdown)" style="padding: 2%; margin-right:2%;"
           (click)="modal.close('Save click')">Delete Item</button>
-        <button type="button" class="btn btn-success"  style="padding: 2%; "
-          (click)="modal.close('Save click')">Save Changes</button>
-        
+        <button type="button" class="btn btn-success" style="padding: 2%; " (click)="modal.close('Save click')">Save
+          Changes</button>
+
       </div>
     </ng-template>
 
